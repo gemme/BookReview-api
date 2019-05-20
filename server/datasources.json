@@ -1,6 +1,13 @@
 {
   "db": {
     "url": "mongodb://bookreview:b00kr3v13w@ds157956.mlab.com:57956/bookreview-api",
+    "name": "db",
     "connector": "mongodb"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
   }
 }
