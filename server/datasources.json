@@ -1,6 +1,6 @@
 {
   "db": {
-    "name": "db",
-    "connector": "memory"
+    "url": "mongodb://bookreview:b00kr3v13w@ds157956.mlab.com:57956/bookreview-api",
+    "connector": "mongodb"
   }
 }
