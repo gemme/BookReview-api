@@ -12,6 +12,10 @@
     },
     "author": {
       "type": "string"
+    },
+    "image": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
