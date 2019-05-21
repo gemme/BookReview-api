@@ -42,5 +42,9 @@
   "Container": {
     "dataSource": "storage",
     "public": true
+  },
+  "Review": {
+    "dataSource": "db",
+    "public": true
   }
 }

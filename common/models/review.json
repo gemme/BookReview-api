@@ -1,32 +1,26 @@
 {
-  "name": "Book",
+  "name": "Review",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "author": {
+    "userName": {
       "type": "string"
     },
-    "image": {
-      "type": "string",
-      "required": true
-    },
     "rating": {
-      "type": "number",
-      "required": true
+      "type": "number"
+    },
+    "date": {
+      "type": "date"
     }
   },
   "validations": [],
   "relations": {
-    "reviews": {
-      "type": "hasMany",
-      "model": "Review",
+    "book": {
+      "type": "belongsTo",
+      "model": "Book",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
