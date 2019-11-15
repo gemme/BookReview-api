@@ -33,6 +33,19 @@
       }
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "permission": "DENY",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "property": "*"
+    },
+    {
+      "permission": "ALLOW",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "property": "find"
+    }
+  ],
   "methods": {}
 }
