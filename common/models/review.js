@@ -27,7 +27,6 @@ module.exports = function(Review) {
             }, 0);
 
             //console.log('totalReviews', totalReviews);
-
             //console.log('totalRating', totalRating);
 
             const book = await Review.app.models.Book.findById(instance.bookId,{});
