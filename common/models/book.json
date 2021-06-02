@@ -8,18 +8,18 @@
   "properties": {
     "title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "author": {
       "type": "string"
     },
     "image": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "rating": {
       "type": "number",
-      "required": true
+      "required": false
     }
   },
   "validations": [],
