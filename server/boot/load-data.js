@@ -28,13 +28,19 @@ module.exports = (app, cb) => {
         { title: 'The Brothers Karamazov', author:'Fyodor Dostoevsky', image: 'karamazov.jpg', rating: 0 },
         { title: 'The Portrait of a Lady', author:'Henry James', image: 'the_portrait.jpg', rating: 0 },
         { title: 'The Trial', author:'Franz Kafka', image: 'the_trial.jpg', rating: 0 },
-      { title: 'Men Without Women', author:'Ernest Hemingway', image: 'men_without_women.jpg', rating: 0 },
+        { title: 'Men Without Women', author:'Ernest Hemingway', image: 'men_without_women.jpg', rating: 0 },
     ];
 
-    Book.findOrCreate( {fields : data} , data ,
+    /* Book.findOrCreate({ fields: { title: false } }, data ,
         (err, instance, created) => {
             if(err) cb(err);
+            console.log(instance);
+            console.log(created);
             cb(null, instance);
         }
-    );
+    ); */
+    Book.create(data, (err, obj) => {
+        if(err) cb(err);
+        cb(null, obj);
+    });
 }
